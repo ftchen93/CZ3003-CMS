@@ -1,0 +1,48 @@
+View:
+home.php
+view_weather.php
+view_traffic.php
+report_incident.php
+op_login.php
+create_incident.php
+approve_incident.php
+deactivate_incident.php
+about_us.php
+hotline.php
+
+
+Controller:
+home.php
+view_weather.php
+view_traffic.php
+report_incident.php
+op_login.php
+op_logout.php
+create_incident.php
+approve_incident.php
+deactivate_incident.php
+about_us.php
+hotline.php
+apcu_cache.php
+
+facebook_api.php
+twitter_api.php
+get_traffic_api.php
+get_weather_api.php
+generate_report.php
+
+
+Model:
+MySQL_DB.php
+User.php
+
+
+
+Call Procedure:
+Timer -> get_traffic_api.php -> fetchTrafficIncidents() -> LTA DataMall (Traffic API)
+                                fetchTrafficIncidents() <-
+                                fetchTrafficIncidents() -> apcu_cache.php -> saveTrafficIncidents()
+
+Timer -> get_weather_api.php -> fetchWeatherReport() -> NEA Datasets (Weather API)
+                                fetchWeatherReport() <-
+                                fetchWeatherReport() -> apcu_cache.php -> saveWeatherReport()

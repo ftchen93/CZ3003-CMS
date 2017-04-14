@@ -1,0 +1,78 @@
+-----------------------------------------------------------------
+image name		source
+-----------------------------------------------------------------
+cms_logo.png https://www.freelogoservices.com/
+HR.png	http://downloadicons.net/heavy-rain-icons?page=4
+TL.png http://www.fancyicons.com/free-icon/103/weather-icon-set/free-thunder-storms-icon-png/
+BR.png	https://www.iconfinder.com/icons/1527679/cloud_cloudy_fog_foggy_weather_icon#size=512
+DR.png	https://www.iconfinder.com/icons/1527676/drizzle_rain_weather_icon#size=128
+FN.png	https://www.iconfinder.com/icons/1527661/moon_night_weather_icon#size=512
+FG.png	https://www.iconfinder.com/icons/64302/fog_icon#size=32
+FW.png	https://www.iconfinder.com/icons/1076727/hot_spring_summer_sun_sunshine_temperature_warm_icon#size=512
+CL.png	https://www.iconfinder.com/icons/1214003/cloud_summer_sun_weather_icon#size=128
+FA.png	https://www.iconfinder.com/icons/118961/clouds_few_weather_icon#size=128
+HT.png	https://www.iconfinder.com/icons/118967/storm_weather_icon#size=128
+HG.png	http://www.meteofrieschepalen.nl/weather28/index.php?p=wsStartPage&wp=CU&lang=en
+HS.png	http://www.mikeafford.com/store/product/weather-icon-set-ms-02.html
+HZ.png	http://www.softicons.com/web-icons/weather-icons-by-wojciech-grzanka/haze-icon
+LH.png	http://www.softicons.com/web-icons/weather-icons-by-wojciech-grzanka/haze-icon
+LR.png	https://github.com/tomkp/weather-icons
+LS.png	https://github.com/tomkp/weather-icons
+RA.png	https://www.iconfinder.com/icons/809980/cloud_rain_rainy_weather_icon#size=128
+OC.png	http://findicons.com/icon/44391/overcast
+PC.png	https://www.iconfinder.com/icons/1342926/citycons_cloud_sunny_weather_icon#size=128
+PN.png	https://www.iconfinder.com/icons/118960/clouds_few_night_weather_icon#size=128
+PS.png	//ryan pls
+SH.png	https://www.emaze.com/@ACWLZFZZ/Environmental-Science-Vocab
+SK.png	https://www.iconfinder.com/icons/118505/strong_typhoon_weather_wind_windy_icon
+SR.png	https://www.iconfinder.com/icons/118505/strong_typhoon_weather_wind_windy_icon
+SU.png	//ryan pls
+SW.png	https://clipartfest.com/categories/view/b148909d51b4b3fb2c9ebbfa6a4b07d237473740/wind-clipart-png.html
+WC.png	https://www.iconfinder.com/icons/681927/blowing_cloud_cloudy_overcast_severe_winds_wind_windy_icon
+WD.png	https://www.iconfinder.com/icons/570842/blowing_air_breezy_weather_wind_blow_windy_icon
+WR.png	https://www.iconfinder.com/icons/642039/cloudy_forecast_heavy_rain_rainy_storm_weather_windy_icon
+WS.png	https://www.iconfinder.com/icons/642039/cloudy_forecast_heavy_rain_rainy_storm_weather_windy_icon
+WF.png	https://www.iconfinder.com/icons/570842/blowing_air_breezy_weather_wind_blow_windy_icon
+
+case "SN": return "Snow";
+case "SS": return "Snow Showers";
+----------------------------------------------------------------
+function getWeatherName(abbr){
+		switch(abbr){
+		case "BR": return "Mist";
+		case "CL": return "Cloudy";
+		case "DR": return "Drizzle";
+		case "FA": return "Fair (Day)";
+		case "FG": return "Fog";
+		case "FN": return "Fair (Night)";
+		case "FW": return "Fair & Warm";
+		case "HG": return "Heavy Thundery Showers with Gusty Winds";
+		case "HR": return "Heavy Rain";
+		case "HS": return "Heavy Showers";
+		case "HT": return "Heavy Thundery Showers";
+		case "HZ": return "Hazy";
+		case "LH": return "Slightly Hazy";
+		case "LR": return "Light Rain";
+		case "LS": return "Light Showers";
+		case "OC": return "Overcast";
+		case "PC": return "Partly Cloudy (Day)";
+		case "PN": return "Partly Cloudy (Night)";
+		case "PS": return "Passing Showers";
+		case "RA": return "Moderate Rain";
+		case "SH": return "Showers";
+		case "SK": return "Strong Winds, Showers";
+		case "SN": return "Snow";
+		case "SR": return "Strong Winds, Rain";
+		case "SS": return "Snow Showers";
+		case "SU": return "Sunny";
+		case "SW": return "Strong Winds";
+		case "TL": return "Thundery Showers";
+		case "WC": return "Windy, Cloudy";
+		case "WD": return "Windy";
+		case "WF": return "Windy, Fair";
+		case "WR": return "Windy, Rain";
+		case "WS": return "Windy, Showers";
+		case "SU": return "Sunny";
+		}
+	  }
+----------------------------------------------------------
